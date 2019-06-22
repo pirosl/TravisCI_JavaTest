@@ -1,7 +1,6 @@
 package com.lucianpiros.app;
 
 /**
- * Hello world!
  *
  */
 public class App 
