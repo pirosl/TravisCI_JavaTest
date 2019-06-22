@@ -1,2 +1,2 @@
 # TravisCI_JavaTest
-TravisCI build status: https://travis-ci.org/pirosl/TravisCI_JavaTest.svg?branch=master
+TravisCI build status: [![Build Status](https://travis-ci.org/pirosl/TravisCI_JavaTest.svg?branch=master)](https://travis-ci.org/pirosl/TravisCI_JavaTest)
