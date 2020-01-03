@@ -25,4 +25,31 @@ public class Problem2 {
 		
 		return sol;	
 	}
+
+	// Solve same problem without using division	
+	public List<Integer> solve1(List<Integer> nums) {
+		List<Integer> sol = new ArrayList<>();
+
+		if (nums.size() <= 1) {
+			for (int i = 0; i < nums.size(); ++i) {
+				sol.add(0);
+			}
+		}
+		else {
+			for (int i = 0; i < nums.size(); ++i) {
+				sol.add(1);
+			}
+			int prod = 1;
+			for (int i = 1; i < nums.size(); ++i) {
+				prod *= nums.get(i-1);
+				sol.set(i, sol.get(i)  * prod);
+			}
+			prod = 1;
+			for (int i = nums.size() - 2; i >= 0; --i) {
+				prod *= nums.get(i+1);
+				sol.set(i, sol.get(i) * prod);		
+			}
+		}
+		return sol;
+	}
 }

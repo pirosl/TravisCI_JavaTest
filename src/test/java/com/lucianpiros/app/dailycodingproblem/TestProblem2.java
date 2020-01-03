@@ -19,10 +19,22 @@ public class TestProblem2 {
 	}
 
 	@Test
+	public void Test11() {
+		List<Integer> list = Arrays.asList(1,2,3,4,5);
+		assertEquals(new Problem2().solve1(list), Arrays.asList(120, 60, 40, 30, 24));
+	}
+
+	@Test
 	public void Test2() {
 		List<Integer> list = Arrays.asList(3,2,1);
 		assertEquals(new Problem2().solve(list), Arrays.asList(2, 3, 6));
 	}
+
+	@Test
+	public void Test21() {
+		List<Integer> list = Arrays.asList(3,2,1);
+		assertEquals(new Problem2().solve1(list), Arrays.asList(2, 3, 6));
+	}	
 
 	@Test
 	public void Test3() {
