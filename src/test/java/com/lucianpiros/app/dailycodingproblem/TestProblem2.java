@@ -41,4 +41,10 @@ public class TestProblem2 {
 		List<Integer> list = Arrays.asList(1,1,1);
 		assertEquals(new Problem2().solve(list), Arrays.asList(1,1,1));
 	}
+
+	@Test
+	public void Test31() {
+		List<Integer> list = Arrays.asList(2);
+		assertEquals(new Problem2().solve1(list), Arrays.asList(0));
+	}
 }
