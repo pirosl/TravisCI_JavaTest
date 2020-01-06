@@ -1,3 +1,5 @@
+package com.lucianpiros.app.dailycodingproblem.util;
+
 /**
  * Generic Pair class
  */ 
