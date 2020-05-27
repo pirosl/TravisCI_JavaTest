@@ -7,7 +7,7 @@ package com.lucianpiros.app.dailycodingproblem.util;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter @Getter
+@Getter
 public class Pair<T,S> {
 	private	T first;
 	private S second;
