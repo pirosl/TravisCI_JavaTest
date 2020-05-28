@@ -40,7 +40,7 @@ public class Problem8 {
 
 		boolean isUnival = true;
 
-		if (!left.getSecond() || !right.getSecond()) {
+		if (Boolean.FALSE.equals(left.getSecond()) || Boolean.FALSE.equals(right.getSecond())) {
 			isUnival = false;
 		}
 		if (root.getLeft() != null && root.getData() != root.getLeft().getData()) {
@@ -51,10 +51,10 @@ public class Problem8 {
 		}
 
 		if (isUnival) {
-			return new Pair(left.getFirst() + right.getFirst() + 1, true);
+			return new Pair<Integer, Boolean>(left.getFirst() + right.getFirst() + 1, true);
 		}
 		else {
-			return new Pair(left.getFirst() + right.getFirst(), false);
+			return new Pair<Integer, Boolean>(left.getFirst() + right.getFirst(), false);
 		}
 	}
 }
