@@ -29,7 +29,7 @@ public class TestProblem8 {
 		root.getRight().getLeft().setLeft(new TreeNode(1));
 		root.getRight().getLeft().setRight(new TreeNode(1));
 
-		assertEquals(new Problem8().solve(root), 5);
+		assertEquals(5, new Problem8().solve(root));
 	}
 
 
@@ -51,6 +51,6 @@ public class TestProblem8 {
 		root.getRight().getLeft().setLeft(new TreeNode(1));
 		root.getRight().getLeft().setRight(new TreeNode(1));
 		
-		assertEquals(new Problem8().solve(root), 4);
+		assertEquals(4, new Problem8().solve(root));
 	}
 }

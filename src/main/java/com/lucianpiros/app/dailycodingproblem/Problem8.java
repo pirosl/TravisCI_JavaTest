@@ -51,10 +51,10 @@ public class Problem8 {
 		}
 
 		if (isUnival) {
-			return new Pair<Integer, Boolean>(left.getFirst() + right.getFirst() + 1, true);
+			return new Pair<>(left.getFirst() + right.getFirst() + 1, true);
 		}
 		else {
-			return new Pair<Integer, Boolean>(left.getFirst() + right.getFirst(), false);
+			return new Pair<>(left.getFirst() + right.getFirst(), false);
 		}
 	}
 }
